@@ -11,6 +11,7 @@ import com.mc3699.smparch.archetype.growth.*;
 import com.mc3699.smparch.archetype.heaven.*;
 import com.mc3699.smparch.archetype.john_ultrakill.*;
 import com.mc3699.smparch.archetype.miku.*;
+import com.mc3699.smparch.archetype.darkninja.*;
 import com.mc3699.smparch.archetype.nightheart.*;
 import com.mc3699.smparch.archetype.pencil_html.*;
 import com.mc3699.smparch.archetype.teebee.*;
@@ -124,7 +125,19 @@ public class SMPAbilities {
 
     public static final Supplier<FireballAbility> FIREBALL =
             ABILITIES.register("fireball", FireballAbility::new);
-
+    
+    public static final Supplier<FocusedTeleportationAbility> FOCUSED_TELEPORTATION =
+            ABILITIES.register("focused_teleportation", FocusedTeleportationAbility::new);
+    
+    public static final Supplier<ExperienceCrystallizationAbility> EXPERIENCE_CRYSTALLIZATION =
+            ABILITIES.register("experience_crystallization", ExperienceCrystallizationAbility::new);
+    
+    public static final Supplier<HighJumpAbility> HIGH_JUMP =
+            ABILITIES.register("high_jump", HighJumpAbility::new);
+    
+    public static final Supplier<MoonsPunishment> MOONS_PUNISHMENT =
+            ABILITIES.register("moons_punishment", MoonsPunishment::new);
+    
     public static final Supplier<ArrowAbility> ARROW =
             ABILITIES.register("arrow", ArrowAbility::new);
 
